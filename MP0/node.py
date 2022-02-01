@@ -2,8 +2,9 @@ import socket
 import sys
 import time
 import os
-HOST = '127.0.0.1'
-PORT = 5566
+HOST = sys.argv[1]
+PORT = int(sys.argv[2])
+print(HOST,PORT)
 class Node:
     def client(self):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
