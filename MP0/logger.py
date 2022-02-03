@@ -15,15 +15,13 @@ if len(sys.argv) > 2:
     print('Incorrect input arguments')
     sys.exit(0)
 
-def nodenum():
-    print('abc')
 class server:
     def storedata(self,data,width):
         recv_time = time.time()
         gen_time = float(data.split()[0])
         delay = recv_time-gen_time
         newline = data+' '+str(delay)+' '+str(width)
-        print(newline)
+        # print(newline)
         return newline.split()
 
     def multinode(self,connection, addr,Threadnum):
