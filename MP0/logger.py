@@ -6,8 +6,8 @@ from _thread import *
 import threading
 import csv
 
-# HOST = '172.22.158.15'
-HOST = '127.0.0.1'
+HOST = '172.22.158.15'
+#HOST = '127.0.0.1'
 PORT = int(sys.argv[1])
 Threadnum = 0
 # print(str(sys.argv[1]))
